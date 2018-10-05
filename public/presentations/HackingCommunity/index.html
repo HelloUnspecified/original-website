@@ -9,10 +9,10 @@
     <title>Hacking Community for Good - Unspecified</title>
     <meta name="description" content="The untold tips and tricks of navagating and being present in the tech community.">
 
-    <link rel="stylesheet" href="../revealjs/css/reveal.css">
-    <link rel="stylesheet" href="../revealjs/css/theme/black.css">
-    <link rel="stylesheet" href="../presentations.css">
-    <link rel="stylesheet" href="../unspecified.css">
+    <link rel="stylesheet" href="/presentations/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="/presentations/revealjs/css/theme/black.css">
+    <link rel="stylesheet" href="/presentations/presentations.css">
+    <link rel="stylesheet" href="/presentations/unspecified.css">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Cherry+Cream+Soda|Lato" rel="stylesheet">
@@ -1203,31 +1203,31 @@
         </ul>
     </footer>
 
-    <script src="../revealjs/lib/js/head.min.js"></script>
-    <script src="../revealjs/js/reveal.js"></script>
+    <script src="/presentations/revealjs/lib/js/head.min.js"></script>
+    <script src="/presentations/revealjs/js/reveal.js"></script>
     <script>
         Reveal.initialize({
             loop: false,
             transition: 'slide',
             dependencies: [
                 // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-                { src: '../revealjs/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: '/presentations/revealjs/lib/js/classList.js', condition: function () { return !document.body.classList; } },
 
                 // Interpret Markdown in <section> elements
-                { src: '../revealjs/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-                { src: '../revealjs/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '/presentations/revealjs/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '/presentations/revealjs/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
 
                 // Syntax highlight for <code> elements
-                { src: '../revealjs/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: '/presentations/revealjs/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
 
                 // Zoom in and out with Alt+click
-                { src: '../revealjs/plugin/zoom-js/zoom.js', async: true },
+                { src: '/presentations/revealjs/plugin/zoom-js/zoom.js', async: true },
 
                 // Speaker notes
-                { src: '../revealjs/plugin/notes/notes.js', async: true },
+                { src: '/presentations/revealjs/plugin/notes/notes.js', async: true },
 
                 // MathJax
-                { src: '../revealjs/plugin/math/math.js', async: true }
+                { src: '/presentations/revealjs/plugin/math/math.js', async: true }
             ]
         });
     </script>

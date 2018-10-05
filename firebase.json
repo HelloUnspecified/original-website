@@ -9,6 +9,12 @@
             "**/node_modules/**",
             "**/docs/**",
             "**/temp/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
         ]
     }
 }
