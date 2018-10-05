@@ -1,0 +1,27 @@
+.headerLayout {
+    display: inline-grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: 'logo . nav';
+
+    position: fixed;
+    z-index: 5;
+    background: #f3f6fa;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    height: 2.5em;
+    padding-top: 1em;
+
+    letter-spacing: 0.075em;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.headerNav {
+    grid-area: nav;
+    justify-self: end;
+    padding-right: 2em;
+}

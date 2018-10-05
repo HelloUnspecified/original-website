@@ -1,0 +1,30 @@
+.app {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1.5em;
+}
+
+nav ul li a {
+    color: inherit;
+    line-height: 1em;
+}
+
+nav ul li.active > a,
+nav ul li:hover > a {
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}

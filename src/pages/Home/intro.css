@@ -1,0 +1,18 @@
+header.special {
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+header.special h2 {
+    margin-bottom: 0;
+}
+
+header.special h2 + p {
+    margin-bottom: 0;
+    padding-top: 1.5em;
+}
+
+header.special .icon {
+    height: 25em;
+    z-index: 100;
+}

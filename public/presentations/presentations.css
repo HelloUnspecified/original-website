@@ -1,0 +1,100 @@
+.reveal {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+.reveal h1 {
+    font-size: 1.9em;
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+}
+
+.reveal h4 {
+    font-size: 0.9em;
+}
+
+footer {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+    footer {
+        display: block;
+    }
+}
+
+footer ul.inline {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+footer ul.inline li {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: mallory, sans-serif;
+    font-size: 24px;
+    color: #fff;
+}
+footer ul.inline li a {
+    color: inherit;
+    text-decoration: none;
+}
+footer ul.inline li a::before {
+    display: inline-block;
+    margin-right: 4px;
+    font-family: 'FontAwesome';
+    vertical-align: -5%;
+}
+footer ul.inline li a[href*='twitter.com']:not(.no-icon)::before {
+    content: '\f099';
+}
+footer ul.inline li a[href*='git.io']:not(.no-icon)::before {
+    content: '\F26C';
+}
+footer ul.inline li a[href*='facebook.com']::before {
+    content: '\F09A';
+}
+footer ul.inline li a[href*='github.com']::before {
+    content: '\F09B';
+}
+
+.reveal .image-credit {
+    display: inline-block;
+    margin: 45vh auto 0;
+    padding: 5px 20px !important;
+    background-color: rgba(34, 34, 34, 0.75);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px !important;
+    z-index: 10;
+}
+
+.reveal .image-credit--with-text {
+    margin-top: 10vh;
+}
+
+.reveal .image-credit::before {
+    content: attr(data-credit-type) ': ';
+}
+
+.reveal .controls {
+    z-index: 20;
+}

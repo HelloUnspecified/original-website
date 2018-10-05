@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+# build output
+dist/
+
+#mac os files
+.DS_Store
+
+# react static tmp files
+tmp/
+
+# ignoring a video for now.
+/public/presentations/HackingCommunity/videos

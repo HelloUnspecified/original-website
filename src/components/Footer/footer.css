@@ -1,0 +1,17 @@
+.footerLayout {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas: '. footerLinks .';
+}
+
+.footerWrapper {
+    justify-self: center;
+    grid-area: footerLinks;
+
+    line-height: 0em;
+    letter-spacing: 0.075em;
+    text-align: center;
+}

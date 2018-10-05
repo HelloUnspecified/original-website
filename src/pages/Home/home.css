@@ -1,0 +1,22 @@
+.homeLayout {
+    display: inline-grid;
+
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+
+    grid-template-areas: '. mainLeft mainCenter mainRight .';
+
+    background-image: url('../../images/dark-tl.svg'),
+        url('../../images/dark-tr.svg'), url('../../images/dark-bl.svg'),
+        url('../../images/dark-br.svg');
+
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 25em;
+}
+
+.intro {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
