@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '8'
+script:
+- npm run build
+deploy:
+  project: unspecified-66f80
+  provider: firebase
+  skip_cleanup: true
+  message: 'Build # $TRAVIS_BUILD_NUMBER'
+  token:
+    secure: UzNRjN7xI1XtHD95rqbGy5JTw9uis1ClyLy47azBXuYhQkbBk1ABQDChTYdfO2VcLTAMwyrppFOyC+9/YwOle8WVc+23fRuQZFLZW7Yx7CElw7WqM0Z/zwrSKv4jVEqxlDN3iXB8RIWtsl2mOeUHW+3ED5qA2tjQVJdUr0P7CVajFWRUj4IG41lT8bz6/eTViPL3xvFZNwqEcmRPL1QuI1pksfFVPJGqzhwDDpuHTUzNnXA/l7gTd+XA1GKwCqq3OWaZkOE7bo/KAuQNP/sB0Qif7nqUUBUgYq6EbQ+tmymI09WVAx7+wd/+to33g7Iiqwov68yFwtDFXlp3L9MWhxbqlHHMH3O05+UbeWHy7cf7EfyQloSPZy2S7eb3Oy4tsc9pvGBuLxL8yelCbrE4TxKenhZsLNeGVW4eRQyNtk1+4l1IjvzbgBPWj0u2GiR89i4jxlqTR8ysOEatbAzzksmDskipHRvjEs5ZrAynlZE2VjKDdu7u33F5W92XVZdw0ZeB2XCho51nvj3WltOVcmgem6CVlzSnNb8f5dXvmppwR2pDJikpx7/3Cafix6XLdlXPH1o+UVuBuaQwSvcAcjHnrf9tNr5luz8Ma9WQcFT6zSmI5sRokC6rT6vvhL8WtHhSNPxbucBipZhGoQXLMuOh7Dj3mrIqeI4zWohdzZo=
