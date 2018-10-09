@@ -195,15 +195,15 @@
                     </div>
                 </section>
 
-                <!--
-                    <section data-background-color="#fff" data-background-video="./videos/What-is-Community.m4v">
-                    </section>
-                 -->
-                <section data-background-color="#fff">
+
+                <section data-background-color="#fff" data-background-video="./videos/What-is-Community.m4v">
+                </section>
+
+                <!-- <section data-background-color="#fff">
                     <iframe src="https://www.youtube.com/embed/E2z8YIn1vdc?ecver=1" frameborder="allow=" autoplay;
                         encrypted-media" allowfullscreen></iframe>
 
-                </section>
+                </section> -->
 
                 <section data-background-color="#DA4A49">
                     <h1>So, it's complex</h1>
@@ -1199,7 +1199,7 @@
         <ul class="inline">
             <li><a href="https://on.csell.net/hack" title="View the slides online.">on.csell.net/hack</a></li>
             <li><a href="https://twitter.com/csell5" title="Find Clark on Twitter">@csell5</a></li>
-            <li><a class="no-icon" href="https://twitter.com/intent/tweet?text=Adventure%20as%20a%20career%20plan%20by%20%40jlengstorf&amp;hashtags=THATConference&amp;related=jlengstorf%2CThatConference&amp;url=https%3A%2F%2Fgit.io%2Fadv-career">#THATConference</a></li>
+            <li><a class="no-icon" href="https://twitter.com/intent/tweet?text=Hacking%20Community%20by%20%40csell5&amp;hashtags=THATConference&amp;related=csell5%2CThatConference&amp;url=https%3A%2F%2Fon.csell.net%2Fhack">#THATConference</a></li>
         </ul>
     </footer>
 
@@ -1209,6 +1209,8 @@
         Reveal.initialize({
             loop: false,
             transition: 'slide',
+            pdfMaxPagesPerSlide: 1,
+            pdfSeparateFragments: false,
             dependencies: [
                 // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
                 { src: '/presentations/revealjs/lib/js/classList.js', condition: function () { return !document.body.classList; } },
@@ -1227,7 +1229,10 @@
                 { src: '/presentations/revealjs/plugin/notes/notes.js', async: true },
 
                 // MathJax
-                { src: '/presentations/revealjs/plugin/math/math.js', async: true }
+                { src: '/presentations/revealjs/plugin/math/math.js', async: true },
+
+                // Print PDF
+                { src: '/presentations/revealjs/plugin/print-pdf/print-pdf.js', async: true },
             ]
         });
     </script>
