@@ -10,13 +10,21 @@
     <meta name="description" content="The untold tips and tricks of navigating and being present in the tech community.">
 
     <link rel="stylesheet" href="/presentations/revealjs/css/reveal.css">
-    <link rel="stylesheet" href="/presentations/revealjs/css/print/pdf.css">
     <link rel="stylesheet" href="/presentations/revealjs/css/theme/black.css">
     <link rel="stylesheet" href="/presentations/presentations.css">
     <link rel="stylesheet" href="/presentations/unspecified.css">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Cherry+Cream+Soda|Lato" rel="stylesheet">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '/presentations/revealjs/css/print/pdf.css' : '/presentations/revealjs/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 </head>
 
 <body>
@@ -1233,9 +1241,6 @@
 
                 // MathJax
                 { src: '/presentations/revealjs/plugin/math/math.js', async: true },
-
-                // Print PDF
-                { src: '/presentations/revealjs/plugin/print-pdf/print-pdf.js', async: true },
             ]
         });
     </script>
