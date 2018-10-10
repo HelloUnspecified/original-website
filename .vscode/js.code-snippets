@@ -1,0 +1,14 @@
+{
+    "copyright": {
+        "prefix": ["copyright"],
+        "body": "Copyright. Unspecified LLC 2018",
+        "description": "Adds copyright...",
+        "scope": "javascript,typescript"
+    },
+
+    "clog": {
+        "prefix": "clog",
+        "body": "console.log('$1');",
+        "description": "Log output to console"
+    }
+}
