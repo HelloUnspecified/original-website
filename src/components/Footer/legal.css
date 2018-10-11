@@ -1,0 +1,9 @@
+.legalNav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.legalNav a {
+    padding: 0 1em;
+}

@@ -2,16 +2,22 @@
     display: inline-grid;
 
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr;
 
     grid-template-areas: '. footerLinks .';
 }
 
 .footerWrapper {
-    justify-self: center;
     grid-area: footerLinks;
+    justify-self: center;
 
-    line-height: 0em;
+    line-height: 1.5em;
     letter-spacing: 0.075em;
     text-align: center;
+}
+
+.footerItem {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }

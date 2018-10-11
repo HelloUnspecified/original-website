@@ -1,0 +1,12 @@
+.socialNav ul {
+    margin: 2em 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.socialNav a {
+    font-size: 2.5em;
+}

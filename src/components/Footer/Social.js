@@ -3,9 +3,11 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-static';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import './social.css';
+
 const Social = props => (
-    <nav>
-        <ul className="linkIcons">
+    <div className="socialNav">
+        <ul>
             <li>
                 <Link to="https://github.com/hellounspecified">
                     <FontAwesomeIcon
@@ -71,11 +73,14 @@ const Social = props => (
 
             <li>
                 <Link to="https://github.com/hellounspecified">
-                    <FontAwesomeIcon icon="email" aria-hidden="true" />
+                    <FontAwesomeIcon
+                        icon={['fa', 'envelope']}
+                        aria-hidden="true"
+                    />
                 </Link>
             </li>
         </ul>
-    </nav>
+    </div>
 );
 
 export default Social;

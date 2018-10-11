@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 
+import './legal.css';
+
 const Legal = props => (
-    <nav>
+    <div className="legalNav">
         <ul>
             <li>
                 <a href="/legal/termsofuse">Terms of Use</a>
@@ -13,7 +15,7 @@ const Legal = props => (
                 <a href="/legal/privacy">Privacy Policy</a>
             </li>
         </ul>
-    </nav>
+    </div>
 );
 
 export default Legal;

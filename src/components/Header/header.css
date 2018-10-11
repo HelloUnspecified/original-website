@@ -17,6 +17,7 @@
 }
 
 .logo {
+    padding-left: 2em;
     grid-area: logo;
 }
 
@@ -24,4 +25,9 @@
     grid-area: nav;
     justify-self: end;
     padding-right: 2em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
