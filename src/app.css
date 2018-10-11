@@ -1,10 +1,28 @@
 .app {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-
+    grid-template-rows: 0.25fr auto 1fr;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+
+    grid-template-areas:
+        'header'
+        'contentBody'
+        'footer';
+
+    grid-gap: 10px;
+}
+
+.header {
+    background: #f3f6fa;
+    grid-area: header;
+}
+
+.contentBody {
+    grid-area: contentBody;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
 }
 
 nav ul {
