@@ -24,6 +24,16 @@ export default {
                 component: 'src/pages/legal/TermsOfUse',
                 getData: () => legal.termsOfUse,
             },
+            {
+                path: '/legal/privacy',
+                component: 'src/pages/legal/Privacy',
+                getData: () => legal.privacy,
+            },
+            {
+                path: '/legal/copyright',
+                component: 'src/pages/legal/Copyright',
+                getData: () => legal.copyright,
+            },
         ];
     },
 };
