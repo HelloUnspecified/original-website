@@ -21,6 +21,10 @@ export default {
                 component: 'src/pages/Home',
             },
             {
+                path: '/Contact',
+                component: 'src/pages/Contact',
+            },
+            {
                 path: '/Legal/TermsOfUsage',
                 component: 'src/pages/legal/TermsOfUse',
                 getData: () => legal.termsOfUse,

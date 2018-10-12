@@ -8,16 +8,12 @@ const Products = props => (
         <article>
             <header>
                 <h2>
-                    Behold the <strong>icons</strong> that visualize what you’re
-                    all about. or just take up space. your call bro.
+                    Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.
                 </h2>
             </header>
             <p>
-                Sed tristique purus vitae volutpat ultrices. Aliquam eu elit
-                eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit
-                amet. Sed tristique purus vitae volutpat ultrices. eu elit eget
-                commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu
-                elit eget arcu commodo.
+                Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique
+                purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.
             </p>
             <footer>
                 <ul className="buttons">
@@ -33,12 +29,7 @@ const Products = props => (
         <article>
             <ul className="featured-icons">
                 <li>
-                    <FontAwesomeIcon
-                        icon={['far', 'clock']}
-                        size="xs"
-                        className="icon"
-                    />{' '}
-                    <span className="label">Feature 1</span>
+                    <FontAwesomeIcon icon={['far', 'clock']} size="xs" className="icon" /> <span className="label">Feature 1</span>
                 </li>
                 <li>
                     <span className="icon fa-volume-up">
