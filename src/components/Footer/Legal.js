@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-static';
 
 import './legal.css';
 
@@ -6,13 +7,13 @@ const Legal = props => (
     <div className="legalNav">
         <ul>
             <li>
-                <a href="/legal/termsofuse">Terms of Use</a>
+                <Link to="/Legal/TermsOfUsage">Terms of Use</Link>
             </li>
             <li>
-                <a href="/legal/copyright">Copyright Policy</a>
+                <Link to="/Legal/Copyright">Copyright Policy</Link>
             </li>
             <li>
-                <a href="/legal/privacy">Privacy Policy</a>
+                <Link to="/Legal/Privacy">Privacy Policy</Link>
             </li>
         </ul>
     </div>

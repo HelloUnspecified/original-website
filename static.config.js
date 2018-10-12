@@ -12,7 +12,7 @@ export default {
     }),
 
     getRoutes: async () => {
-        const { legal } = await jdown('./src/content');
+        const { legal, aboutClarkSell } = await jdown('./src/content');
 
         return [
             {
@@ -20,19 +20,38 @@ export default {
                 component: 'src/pages/Home',
             },
             {
-                path: '/legal/termsofuse',
+                path: '/Legal/TermsOfUsage',
                 component: 'src/pages/legal/TermsOfUse',
                 getData: () => legal.termsOfUse,
             },
             {
-                path: '/legal/privacy',
+                path: '/Legal/Privacy',
                 component: 'src/pages/legal/Privacy',
                 getData: () => legal.privacy,
             },
             {
-                path: '/legal/copyright',
+                path: '/Legal/Copyright',
                 component: 'src/pages/legal/Copyright',
                 getData: () => legal.copyright,
+            },
+            {
+                path: '/About/ClarkSell',
+                component: 'src/pages/About/ClarkSell',
+            },
+            {
+                path: '/About/ClarkSell/Microsoft',
+                component: 'src/pages/About/ClarkSell/Microsoft',
+                getData: () => aboutClarkSell.microsoft,
+            },
+            {
+                path: '/About/ClarkSell/Allstate',
+                component: 'src/pages/About/ClarkSell/Allstate',
+                getData: () => aboutClarkSell.allstate,
+            },
+            {
+                path: '/About/ClarkSell/Telerik',
+                component: 'src/pages/About/ClarkSell/Telerik',
+                getData: () => aboutClarkSell.telerik,
             },
         ];
     },

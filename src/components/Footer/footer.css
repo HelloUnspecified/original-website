@@ -1,23 +1,16 @@
 .footerLayout {
-    display: inline-grid;
+    font-size: 12pt;
+    text-align: center;
 
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: auto;
+    display: inline-grid;
+    grid-template-columns: 1fr auto 1fr;
 
     grid-template-areas: '. footerLinks .';
 }
 
 .footerWrapper {
     grid-area: footerLinks;
-    justify-self: center;
 
     line-height: 1.5em;
     letter-spacing: 0.075em;
-    text-align: center;
-}
-
-.footerItem {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
 }

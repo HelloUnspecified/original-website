@@ -15,10 +15,6 @@ class Header extends PureComponent {
                     <nav className="headerNav">
                         <ul>
                             <li>
-                                <Link to="/">Home</Link>
-                            </li>
-
-                            <li>
                                 <Link to="/services">Services</Link>
                             </li>
 
