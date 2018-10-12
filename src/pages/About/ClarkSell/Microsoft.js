@@ -9,6 +9,6 @@ export default withRouteData(msft => (
         <h4>{msft.subTitle}</h4>
         <br />
 
-        <div className="defaultLayout">{convert(msft.contents)}</div>
+        <div>{convert(msft.contents)}</div>
     </div>
 ));

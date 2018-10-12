@@ -9,6 +9,6 @@ export default withRouteData(allstate => (
         <h4>{allstate.subTitle}</h4>
         <br />
 
-        <div className="defaultLayout">{convert(allstate.contents)}</div>
+        <div>{convert(allstate.contents)}</div>
     </div>
 ));

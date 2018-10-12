@@ -3,6 +3,7 @@
 import { reloadRoutes } from 'react-static/node';
 import jdown from 'jdown';
 import chokidar from 'chokidar';
+import { homedir } from 'os';
 
 chokidar.watch('./src/content').on('all', () => reloadRoutes());
 
@@ -12,7 +13,7 @@ export default {
     }),
 
     getRoutes: async () => {
-        const { legal, aboutClarkSell } = await jdown('./src/content');
+        const { legal, home, aboutClarkSell } = await jdown('./src/content');
 
         return [
             {
@@ -52,6 +53,11 @@ export default {
                 path: '/About/ClarkSell/Telerik',
                 component: 'src/pages/About/ClarkSell/Telerik',
                 getData: () => aboutClarkSell.telerik,
+            },
+            {
+                is404: true,
+                component: 'src/pages/Home/PageNotFound',
+                getData: () => home.pageNotFound,
             },
         ];
     },

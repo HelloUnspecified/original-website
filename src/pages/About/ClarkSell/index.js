@@ -6,38 +6,31 @@ import './clark.css';
 class Home extends PureComponent {
     render() {
         return (
-            <div className="defaultLayout">
-                <section className="wrapper style4 special">
-                    <div className="inner">
-                        <header>
-                            <h2>Just who is Clark Sell?</h2>
-                            <p>
-                                I’m a very passionate, entrepreneurial person
-                                whose love for developing software was born from
-                                my obsessive passion for building and
-                                customizing automobiles. This love of
-                                creativity, this love of building, creating,
-                                lead me to software development. Like the
-                                automobile shrunk the world, the computer helped
-                                people scale. I love the Web. I love Mobile
-                                Apps. I love IoT and how it’s easier than ever
-                                to get a small micro controller to just do a
-                                thing. Technology is changing the world, and I
-                                am glad to be a small part of it.
-                            </p>
-                        </header>
-                        <ul className="actions">
-                            <li>
-                                <a
-                                    href="/images/about/clarkSellResume.pdf"
-                                    className="button fit special"
-                                >
-                                    Paper Resume
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+            <section className="defaultLayout">
+                <header>
+                    <h2>Just who is Clark Sell?</h2>
+                    <p>
+                        I’m a very passionate, entrepreneurial person whose love
+                        for developing software was born from my obsessive
+                        passion for building and customizing automobiles. This
+                        love of creativity, this love of building, creating,
+                        lead me to software development. Like the automobile
+                        shrunk the world, the computer helped people scale. I
+                        love the Web. I love Mobile Apps. I love IoT and how
+                        it’s easier than ever to get a small micro controller to
+                        just do a thing. Technology is changing the world, and I
+                        am glad to be a small part of it.
+                    </p>
+                    <p>
+                        Need a paper Copy?{' '}
+                        <a
+                            href="/images/about/clarkSellResume.pdf"
+                            className="button fit special"
+                        >
+                            Download Resume
+                        </a>
+                    </p>
+                </header>
 
                 <div className="timeline">
                     <section id="cd-timeline" className="cd-container">
@@ -255,7 +248,7 @@ class Home extends PureComponent {
                         </div>
                     </section>
                 </div>
-            </div>
+            </section>
         );
     }
 }
