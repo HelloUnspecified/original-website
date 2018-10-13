@@ -1,3 +1,9 @@
 .defaultLayout {
     margin: 0 5em;
 }
+
+@media (max-width: 768px) {
+    .defaultLayout {
+        margin: 0 1em;
+    }
+}
