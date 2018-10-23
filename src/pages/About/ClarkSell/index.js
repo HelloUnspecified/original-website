@@ -24,10 +24,7 @@ class Home extends PureComponent {
                             it.
                         </p>
                         <p>
-                            Need a paper Copy?{' '}
-                            <a href="/images/about/clarkSellResume.pdf" className="button fit special">
-                                Download Resume
-                            </a>
+                            Need a paper Copy? <a href="/images/about/clarkSellResume.pdf">Download Resume</a>
                         </p>
                     </header>
 

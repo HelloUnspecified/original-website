@@ -11,6 +11,7 @@ class Header extends PureComponent {
                 <section className="logo">
                     <h1>Unspecified</h1>
                 </section>
+
                 <Router>
                     <nav className="headerNav">
                         <ul>
@@ -23,11 +24,11 @@ class Header extends PureComponent {
                             </li>
 
                             <li>
-                                <Link to="/about">About</Link>
+                                <Link to="/About/ClarkSell">About</Link>
                             </li>
 
                             <li>
-                                <Link to="/contact">Contact Us</Link>
+                                <Link to="/Contact">Contact Us</Link>
                             </li>
                         </ul>
                     </nav>

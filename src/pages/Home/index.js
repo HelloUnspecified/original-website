@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Intro from './Intro';
 import Products from './Products';
+import That from '../../components/ThatConference';
 
 import './home.css';
 
@@ -19,6 +20,7 @@ class Home extends PureComponent {
                     <article className="intro">
                         <Intro />
                         <Products />
+                        <That />
                     </article>
                 </section>
             </Fragment>

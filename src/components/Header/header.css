@@ -17,8 +17,8 @@
 }
 
 .logo {
-    padding-left: 2em;
     grid-area: logo;
+    padding-left: 2em;
 }
 
 .headerNav {
@@ -27,7 +27,7 @@
     padding-right: 2em;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
     justify-content: space-between;
     align-items: center;
 }
